@@ -1,5 +1,9 @@
 package behaviours;
 
+import Enemy.Enemy;
+import People.Player;
+
 public interface IAttack {
-    public void reduceHealth(int health);
+    public void attackEnemy(int healthAmount, Enemy enemy);
+    public void attackPlayer(int healthAmount, Player player);
 }

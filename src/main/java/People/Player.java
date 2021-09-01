@@ -1,5 +1,6 @@
 package People;
 
+import Enemy.Enemy;
 import behaviours.IEquip;
 import com.sun.tools.javac.jvm.Items;
 
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 
 public abstract class Player implements IEquip {
 
-    private int health;
+    public int health;
     private String hand;
     private ArrayList<Items>backpack;
 
@@ -18,9 +19,10 @@ public abstract class Player implements IEquip {
         this.backpack = new ArrayList<>();
     }
 
-    public int getHealth() {
-        return health;
+    public int attackEnemy(int healthAmount, Enemy enemy){
+
     }
+
 
     public void addItemsToBackpack(Items item){
         backpack.add(item);
@@ -29,5 +31,9 @@ public abstract class Player implements IEquip {
 
     public void equipObject(String object){
         this.hand = object;
+    }
+
+    public int getHealth() {
+        return health;
     }
 }
