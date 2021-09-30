@@ -11,8 +11,8 @@ public class Enemy implements IAttack {
         this.health = health;
     }
 
-    public int attackPlayer(int healthAmount, Player player){
-
-    }
+//    public int attackPlayer(int healthAmount, Player player){
+//
+//    }
 
 }

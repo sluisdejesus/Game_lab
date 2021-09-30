@@ -1,16 +1,17 @@
 package People;
-
-import Enemy.Enemy;
-import behaviours.IAttack;
+import behaviours.IEquip;
 
 
-public class Melee extends Player {
+
+public class Melee extends Player implements IEquip {
 
     public Melee(int health, String hand){
         super(health, hand);
     }
 
-
+    public void equipObject(String object){
+        this.hand = object;
+    }
 
 
 }
